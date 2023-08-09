@@ -1,5 +1,5 @@
 from django.urls import path,include
-from cancer.controller.predictController import LungCancerPredict
+from cancer.controller.lungpredictController import LungCancerPredict
 
 
 
