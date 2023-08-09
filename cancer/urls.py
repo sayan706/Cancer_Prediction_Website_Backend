@@ -1,15 +1,11 @@
-from django.contrib import admin
 from django.urls import path,include
-from .views import breastViewSet,lungViewSet,test
-from rest_framework import routers
+from cancer.controller.predictController import LungCancerPredict
 
 
-router = routers.DefaultRouter()
-router.register(r'breasts',breastViewSet)
-router.register(r'lungs',lungViewSet)
+
 
 
 urlpatterns = [
-    path('',include(router.urls))
+    path('lung-predict',LungCancerPredict.as_view())
     
 ]
