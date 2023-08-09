@@ -1,0 +1,55 @@
+from django.db import models
+
+
+class breast(models.Model):
+    radius_mean	= models.FloatField(null=True, blank=True, default=None)
+    texture_mean = models.FloatField(null=True, blank=True, default=None)
+    perimeter_mean = models.FloatField(null=True, blank=True, default=None)	
+    area_mean = models.FloatField(null=True, blank=True, default=None)
+    smoothness_mean	= models.FloatField(null=True, blank=True, default=None)
+    compactness_mean = models.FloatField(null=True, blank=True, default=None)	
+    concavity_mean	= models.FloatField(null=True, blank=True, default=None)
+    concave_points_mean	= models.FloatField(null=True, blank=True, default=None)
+    symmetry_mean	= models.FloatField(null=True, blank=True, default=None)
+    fractal_dimension_mean	= models.FloatField(null=True, blank=True, default=None)
+    radius_se = models.FloatField(null=True, blank=True, default=None)
+    texture_se = models.FloatField(null=True, blank=True, default=None)	
+    perimeter_se = models.FloatField(null=True, blank=True, default=None)	
+    area_se	 = models.FloatField(null=True, blank=True, default=None)
+    smoothness_se = models.FloatField(null=True, blank=True, default=None)	
+    compactness_se	= models.FloatField(null=True, blank=True, default=None)
+    concavity_se	= models.FloatField(null=True, blank=True, default=None)
+    concave_points_se = models.FloatField(null=True, blank=True, default=None)
+    symmetry_se	= models.FloatField(null=True, blank=True, default=None)
+    fractal_dimension_se = models.FloatField(null=True, blank=True, default=None)
+    radius_worst	= models.FloatField(null=True, blank=True, default=None)
+    texture_worst	= models.FloatField(null=True, blank=True, default=None)
+    perimeter_worst	= models.FloatField(null=True, blank=True, default=None)
+    area_worst	= models.FloatField(null=True, blank=True, default=None)
+    smoothness_worst	= models.FloatField(null=True, blank=True, default=None)
+    compactness_worst	= models.FloatField(null=True, blank=True, default=None)
+    concavity_worst	= models.FloatField(null=True, blank=True, default=None)
+    concave_points_worst	= models.FloatField(null=True, blank=True, default=None)
+    symmetry_worst	= models.FloatField(null=True, blank=True, default=None)
+    fractal_dimension_worst= models.FloatField(null=True, blank=True, default=None)
+
+class lung(models.Model):
+    AGE = models.IntegerField(default=0)	
+    SMOKING	= models.IntegerField(default=0)	
+    YELLOW_FINGERS = models.IntegerField(default=0)		
+    ANXIETY	= models.IntegerField(default=0)	
+    PEER_PRESSURE = models.IntegerField(default=0)		
+    CHRONIC_DISEASE	= models.IntegerField(default=0)	
+    FATIGUE = models.IntegerField(default=0)		
+    ALLERGY = models.IntegerField(default=0)		
+    WHEEZING = models.IntegerField(default=0)		
+    ALCOHOL = models.IntegerField(default=0)	
+    CONSUMING = models.IntegerField(default=0)		
+    COUGHING = models.IntegerField(default=0)		
+    SHORTNESS_OF_BREATH	 = models.IntegerField(default=0)	
+    SWALLOWING_DIFFICULTY = models.IntegerField(default=0)	
+    CHEST_PAIN = models.IntegerField(default=0)	
+
+
+
+
