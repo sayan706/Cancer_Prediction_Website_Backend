@@ -8,9 +8,9 @@ def loads(inp):
         model=pickle.load(open(model,"rb"))
         modelPrediction=model.predict([inp])
         if(modelPrediction == 1):
-            return True
+            return "Yes You are effected by lung Cancer"
         else:
-            return False
+            return "No You are not effected by lung cancer"
     except Exception as e:
         raise Exception(str(e))
     
@@ -22,9 +22,9 @@ def loadbreastmodel(inp):
         model=pickle.load(open(model,"rb"))
         modelPrediction=model.predict([inp])
         if(modelPrediction == 0):
-            return "Malignant"
+            return "Malignant! Your Breast Cancer is"
         else:
-            return "Benign"
+            return "Benign! Your Breast Cancer is"
     except Exception as e:
         raise Exception(str(e))
     
